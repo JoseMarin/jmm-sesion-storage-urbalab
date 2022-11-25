@@ -1,0 +1,18 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
+
+
+<div>
+  <hr>
+  <p>Ingrese nombre<input type="text" [(ngModel)]="nombre"></p>
+  <p>Ingrese apellido<input type="text" [(ngModel)]="apellido"></p>
+  <button (click)="save()" routerLink="/info">Add</button>
+  <button (click)="delLocal()">Delete</button>
+</div>
